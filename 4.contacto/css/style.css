@@ -1,0 +1,109 @@
+:root {
+  --fondo: #936e25 ;
+  --titulo: #fdfdfd ;
+  --texto: #2A2A2A ;
+  --fondoboton: #2A4D69 ;
+  --textoboton: #ffffff; 
+  --espaciado: 20px;
+  --fuentebonita: 'Times New Roman', Times, serif
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fuentebonita);
+    }
+
+ul{
+    list-style-type: none;
+}    
+
+a{
+    text-decoration: none;
+    color: var(--texto);
+}
+
+
+header.cabecera{
+    background-color:var(--fondo);
+    color: var(--titulo);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h1 a {
+    color: var(--titulo);
+    letter-spacing: 4px;
+}
+
+.boton-menu{
+    font-size: 28px;
+    color: var(--textoboton);
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover{
+    transform: scale(1.1);
+}
+
+.menu-principal{
+    display: flex;
+    gap: 24px;
+}
+
+.menu-principal a{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover{
+    background-color: #292945;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .boton-menu{
+        display: block;
+    }
+    .menu-principal{
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background-color: var(--fondo);
+        position: absolute;
+        top:100%;
+        right: 0;
+        padding: 15px 20px;
+        z-index: 100;
+        width: 30%;
+        align-items: center;
+    }
+    .menu-principal.menu-desplegado{
+        display: flex;
+    }
+
+    .menu-principal a{
+        padding: 10px 12px;
+        font-size: 17px;
+        
+    }
+}
+
+main{
+    padding: 30px;
+}
