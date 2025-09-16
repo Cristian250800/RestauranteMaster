@@ -131,6 +131,7 @@ main{
 
 #cabecera {
     position: absolute;
+    font-family: 'Georgia', serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
