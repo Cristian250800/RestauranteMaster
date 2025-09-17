@@ -108,3 +108,42 @@ h1 a {
 main{
     padding: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie {
+    background-color: var(--fondo);
+    color: var(--titulo);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+.pie p {
+    margin: 0;
+    font-family: var(--fuentebonita);
+}
+
+@media screen and (max-width: 600px) {
+    .pie {
+        padding: 15px 10px;
+        font-size: 0.8rem;
+    }
+}
