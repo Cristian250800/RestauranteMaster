@@ -5,7 +5,7 @@
   --fondoboton: #2A4D69 ;
   --textoboton: #ffffff; 
   --espaciado: 20px;
-  --fuentebonita: 'Times New Roman', Times, serif
+  --fuentebonita: 'Georgia', serif;
 }
 
 * {
@@ -111,6 +111,89 @@ main{
 
 
 
+
+#Carta {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#Carta h2 {
+    font-size: 2.2rem;
+    color: var(--fondo);
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+#Carta article {
+    margin-bottom: 50px;}
+
+
+#Carta h3 {
+    font-size: 1.8rem;
+    color: var(--fondo);
+    margin-bottom: 20px;
+    font-family: var(--fuentebonita)
+}
+
+#Carta ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+#Carta li {
+    width: 220px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#Carta li:hover {
+    transform: scale(1.05);
+}
+
+#Carta li img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+#Carta li h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--texto);
+}
+
+#Carta li p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--fondo);
+}
+
+
+@media screen and (max-width: 700px) {
+    #Carta ul {
+        gap: 20px;
+    }
+
+    #Carta li {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #Carta li {
+        width: 100%;
+    }
+}
 
 
 
