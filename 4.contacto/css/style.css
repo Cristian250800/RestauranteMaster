@@ -5,7 +5,7 @@
   --fondoboton: #2A4D69 ;
   --textoboton: #ffffff; 
   --espaciado: 20px;
-  --fuentebonita: 'Times New Roman', Times, serif
+  --fuentebonita: 'Georgia', serif
 }
 
 * {
@@ -14,6 +14,11 @@
     box-sizing: border-box;
     font-family: var(--fuentebonita);
     }
+
+
+html,body{
+    overflow-y: hidden;
+}
 
 ul{
     list-style-type: none;
@@ -111,6 +116,154 @@ main{
 
 
 
+.seccion-titulo {
+    font-family: var(--fuentebonita);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--fondo);
+    margin-bottom: 30px;
+}
+
+.contacto-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.informacion {
+    flex: 1 1 400px;
+    max-width: 500px;
+    font-family: var(--fuentebonita);
+    color: var(--texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.informacion p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+
+.informacion h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: var(--fondo);
+}
+
+.informacion .horario {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.informacion .horario li {
+    background-color: rgba(147, 110, 37, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+
+.informacion .icono {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.informacion a {
+    color: var(--fondo);
+    text-decoration: none;
+}
+
+.informacion a:hover {
+    text-decoration: underline;
+}
+
+
+.formulario {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: var(--fuentebonita);
+}
+
+.formulario button {
+    background-color: var(--fondoboton);
+    color: var(--textoboton);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #1d3650;
+}
+
+
+@media screen and (max-width: 900px) {
+    html,body{
+    overflow-y: auto;
+}
+    .contacto-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion,
+    .formulario {
+        flex: unset;
+        width: 90%;
+        text-align: center;
+    }
+
+    .informacion .icono {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    html,body{
+    overflow-y: auto;
+}
+    .contacto-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion {
+        max-width: 90%;
+        text-align: center;
+    }
+}
 
 
 
@@ -126,9 +279,9 @@ main{
     background-color: var(--fondo);
     color: var(--titulo);
     text-align: center;
+    height: 100%;
     padding: 20px 0;
     font-size: 0.9rem;
-    border-top: 2px solid rgba(255,255,255,0.2);
 }
 
 .pie p {

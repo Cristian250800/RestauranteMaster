@@ -24,9 +24,50 @@
     </header>
 
     <main>
-        <h1>CONTACTO</h1>
+    <section id="Contacto">
+        <h2 class="seccion-titulo">Visítanos o contacta con nosotros</h2>
 
-    </main>
+        <div class="contacto-principal">
+            <div class="informacion">
+                <h4>Horario:</h4>
+                    <ul class="horario">
+                        <li>Martes a Domingo: 11:00 - 16:30 | 21:00 - 23:30</li>
+                        <li>Lunes: Cerrado por descanso</li>
+                    </ul>
+                <p><img class="icono" src="../Imagenes/iconos/circulo.png">+34 654 654 654</p>
+                <p><img class="icono" src="../Imagenes/iconos/gmail.png">restaurantecantares@gmail.com</p>
+                <p><img class="icono" src="../Imagenes/iconos/mapa.png"><a href="https://maps.google.com/?q=Restaurante+Cantares,+Av.+Pa%C3%ADs+Valenci%C3%A0,+6,+46712+Platja+de+Piles,+Valencia&hl=es&entry=gmail">Restaurante Cantares, Playa de Piles</a></p>
+            </div>
+
+            <form class="formulario" method="POST" autocomplete="off">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="666666666" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
 
 
 
