@@ -250,29 +250,6 @@ main{
 }
 
 
-@media screen and (max-width: 800px) {
-    html,body{
-    overflow-y: auto;
-}
-    .contacto-principal {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .informacion {
-        max-width: 90%;
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 
 .pie {
@@ -282,6 +259,7 @@ main{
     height: 100%;
     padding: 20px 0;
     font-size: 0.9rem;
+    border-top: 2px solid rgba(255,255,255,0.2);
 }
 
 .pie p {
