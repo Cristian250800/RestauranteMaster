@@ -121,7 +121,7 @@ main{
     font-size: 2.2rem;
     color: var(--fondo);
     margin-bottom: 30px;
-    font-family: 'Georgia', serif;
+    font-family: var(--fuentebonita);
     letter-spacing: 1px;
 }
 
